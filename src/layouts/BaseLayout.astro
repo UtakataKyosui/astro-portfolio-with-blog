@@ -1,0 +1,26 @@
+---
+import "../styles/global.css";
+interface Props { title: string; description: string }
+const { title, description } = Astro.props;
+---
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content={description} />
+  <title>{title}</title>
+</head>
+<body class="min-h-screen bg-slate-950 text-slate-100 antialiased">
+  <header class="mx-auto flex max-w-6xl items-center justify-between px-5 py-7">
+    <a href="/" class="font-semibold tracking-wide focus-visible:outline focus-visible:outline-2 focus-visible:outline-indigo-300">Utakata / Ideas</a>
+    <nav aria-label="メインナビゲーション" class="flex gap-6 text-sm text-slate-300">
+      <a href="/" class="hover:text-white">Home</a>
+      <a href="/works" class="hover:text-white">Works</a>
+      <a href="/#about" class="hover:text-white">About</a>
+    </nav>
+  </header>
+  <main><slot /></main>
+  <footer class="mx-auto max-w-6xl border-t border-slate-800 px-5 py-8 text-sm text-slate-400">© {new Date().getFullYear()} Utakata</footer>
+</body>
+</html>

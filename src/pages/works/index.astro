@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { featuredWorks } from '../../data/site';
+---
+<BaseLayout title="Works | Utakata" description="制作物の一覧。アイデアがどのように作品になったのかを紹介します。">
+  <section class="mx-auto min-h-[65vh] max-w-6xl px-5 py-16">
+    <p class="mb-4 text-xs uppercase tracking-widest text-indigo-300">Projects</p>
+    <h1 class="text-5xl font-bold">Works</h1>
+    <p class="mt-5 max-w-xl leading-8 text-slate-300">思いつきから生まれた制作物を紹介します。</p>
+    {featuredWorks.length ? <div class="mt-12 grid gap-5 sm:grid-cols-2">{featuredWorks.map((work) => <article class="rounded-2xl border border-slate-700 p-6"><h2 class="text-xl font-semibold">{work.title}</h2><p class="mt-3 text-slate-300">{work.summary}</p>{work.href && <a href={work.href} class="mt-4 inline-block text-indigo-300 underline">詳細を見る →</a>}</article>)}</div> : <p class="mt-12 rounded-xl border border-dashed border-slate-700 p-8 text-slate-400">現在、掲載する代表作品を選定中です。</p>}
+  </section>
+</BaseLayout>
