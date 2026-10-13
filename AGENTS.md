@@ -4,7 +4,7 @@
 「アイデアは、日常に転がっている。」という世界観を、関連づいたコンテンツの探索体験として実装する。
 
 ## Read first
-`docs/REQUIREMENTS.md`, `docs/ARCHITECTURE.md`, `docs/CONTENT_MODEL.md`, `docs/DECISIONS.md`。
+要件・設計は GitHub Issue の各 Epic 本文に移した。MVP 要件: #4、アーキテクチャ・技術スタック・設計判断: #1、コンテンツモデル: #2、画面仕様・サイトマップ: #3（`gh issue view <番号>` で参照）。作業は Milestone「MVP v0.1」の Task Issue 単位で進める。
 
 ## Rules
 - MVPの外側のCMS、API、認証、DBを独断で追加しない。
