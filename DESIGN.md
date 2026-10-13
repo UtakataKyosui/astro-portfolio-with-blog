@@ -2,7 +2,7 @@
 
 > Version: 0.1 · Status: Design direction (proposed tokens, subject to visual review)
 > Target: Google Stitch, designers, and coding agents
-> Source of truth for product scope: `docs/REQUIREMENTS.md`; interactions: `docs/UX.md`.
+> Source of truth for product scope: [Epic #4 (MVP requirements)](https://github.com/UtakataKyosui/astro-portfolio-with-blog/issues/4); interactions: [Epic #3 (UX / sitemap)](https://github.com/UtakataKyosui/astro-portfolio-with-blog/issues/3).
 
 ## 1. Product and design intent
 
@@ -219,4 +219,4 @@ Use this file as the **project-level design-system and art-direction context**. 
 
 Stitch creates design candidates, **not** the final functional graph, a content API or accessibility guarantees. The app remains Astro + React island + Tailwind. Keep design tokens centralized and translate approved screens into components. Implement keyboard, semantic state, responsive behavior and reduced-motion controls in code; verify them independently.
 
-If an output contradicts product requirements, prefer `docs/REQUIREMENTS.md` and `docs/UX.md` for behavior. For visual system decisions, use this file until a revision is approved.
+If an output contradicts product requirements, prefer the requirements in [#4](https://github.com/UtakataKyosui/astro-portfolio-with-blog/issues/4) and the UX spec in [#3](https://github.com/UtakataKyosui/astro-portfolio-with-blog/issues/3) for behavior. For visual system decisions, use this file until a revision is approved.
